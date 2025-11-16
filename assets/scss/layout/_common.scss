@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.content_body {
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+    padding-bottom: 120px;
+    align-items: center;
+}
+

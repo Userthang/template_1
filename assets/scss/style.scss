@@ -1,0 +1,40 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Noto Sans JP", sans-serif;
+}
+/*//////////////////////////////////////////////////////////////////////////////
+Common
+//////////////////////////////////////////////////////////////////////////////*/
+
+@import "./common/destyle";
+@import "./common/base";
+
+/*//////////////////////////////////////////////////////////////////////////////
+Layout
+//////////////////////////////////////////////////////////////////////////////*/
+
+@import "./layout/variables";
+@import "./layout/mixin";
+@import "./layout/header";
+@import "./layout/banner";
+@import "./layout/button_bubble";
+@import "./layout/slide";
+@import "./layout/reason";
+@import "./layout/menu";
+@import "./layout/works";
+@import "./layout/voice";
+@import "./layout/staff";
+@import "./layout/blog";
+@import "./layout/showroom_info";
+@import "./layout/showroom_message";
+@import "./layout/footer";
+@import "./layout/company";
+@import "./layout/common";
+@import "./layout/index";
+
+

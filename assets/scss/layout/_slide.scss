@@ -1,0 +1,35 @@
+.slide {
+    margin: 40px 0;
+
+    .container_swiper {
+        margin: 0 80px;
+        position: relative;
+
+        .swiper {
+            margin: 0 80px;
+        }
+
+        .swiper-slide {
+            .img_slide {
+                background-color: #D9D9D9;
+                border-radius: 16px;
+                aspect-ratio: 3.6/1;
+
+                img {
+                    border-radius: 16px;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .swiper-button-prev{
+            color: $orange_color;
+            width: 14px;
+        }
+        .swiper-button-next{
+            color: $orange_color;
+            width: 14px;
+        }
+
+    }
+}

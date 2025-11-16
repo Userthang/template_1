@@ -1,0 +1,169 @@
+.works {
+    width: 100%;
+
+    .container {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        padding: 0 40px;
+        align-items: center;
+    }
+    .title_block{
+        @include title_3_element();
+    }
+    .button_block{
+        @include button_block();
+    }
+    .content_works {
+        max-width: 1120px;
+        width: 100%;
+
+        .tabs {
+            display: flex;
+            gap: 24px;
+            border-bottom: 8px solid $orange_color;
+        }
+
+        .tab {
+            cursor: pointer;
+            padding: 20px 16px;
+            flex: 1;
+            border-radius: 20px 20px 0 0;
+            background-color: #ECECEC;
+            justify-content: space-between;
+            display: flex;
+            align-items: center;
+            .tab_img_sight{
+                width: 32px;
+                height: 32px;
+            }
+            .tab_img_none{
+                opacity: 0;
+            }
+            .tab_mid {
+                font-family: $font_oswald;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 140%;
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                padding-right: 16px;
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .tab.active {
+
+            color: white;
+            background-color: $orange_color;
+
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        .tab_content {
+            display: none;
+        }
+
+        .tab_content.active {
+            display: block;
+        }
+
+        #key {
+            padding: 24px 0;
+            overflow: auto;
+            display: flex;
+            gap: 12px;
+
+            #key_first {
+                padding: 8px 0;
+                background-color: #606060;
+                color: white;
+                width: 100px;
+                border: none;
+                justify-content: center;
+            }
+
+            a {
+                display: flex;
+                gap: 4px;
+                height: 44px;
+                border: 2px solid #CCCCCC;
+                border-radius: 99px;
+                padding: 12px 16px 12px 32px;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 140%;
+                text-decoration: none;
+                align-items: center;
+                font-family: $font_noto_sans_jp;
+
+                span {
+                    white-space: nowrap;
+                }
+            }
+
+            a:hover {
+                background-color: #606060;
+                color: white;
+                border: 2px solid #606060;
+                
+                img {
+                    filter: brightness(0) invert(1);
+                }
+            }
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+
+            .grid_item {
+                &:hover{
+                    box-shadow: 0 0 10px $orange_color;
+                }
+                border-radius: 16px;
+
+                .img_product {
+                    background-color: $light_grey_color;
+                    border-radius: 16px 16px 0 0;
+                    aspect-ratio: 3/2;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 16px 16px 0 0;
+                    }
+                }
+
+                .info_product {
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $light_yellow_background_color;
+                    border-radius: 0 0 16px 16px;
+                    gap: 12px;
+                    padding: 16px 20px 24px;
+                    font-family: $font_noto_sans_jp;
+                    .product_line1 {
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 150%;
+                        text-align: center;
+                        color: $orange_color;
+                    }
+
+                    .product_line2 {
+                        font-weight: 400;
+                        font-size: 13px;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    }
+}
