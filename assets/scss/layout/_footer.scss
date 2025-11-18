@@ -1,6 +1,5 @@
 .footer {
     width: 100%;
-
     .footer_contact {
         width: 100%;
         padding: 80px 0;
@@ -81,6 +80,8 @@
         .contact_button{
             display: flex;
             gap: 24px;
+            flex-wrap: wrap;
+            justify-content: center;
             #mail{
                 background-color: $orange_color;
             }
@@ -209,4 +210,11 @@
             }
         }
     }
+}
+
+@media (max-width: 850px){
+    .footer .footer_info .footer_shop .content_footer_shop{
+        flex-direction: column;
+    }
+    
 }

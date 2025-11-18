@@ -19,7 +19,9 @@
         .button_block {
             @include button_block;
         }
-
+        .replace_content_voice{
+            display: none;
+        }
         .content_voice {
             position: relative;
             max-width: 1280px;
@@ -82,5 +84,13 @@
                 right: 10px;
             }
         }
+    }
+}
+@media (max-width: 500px){
+    .voice .container .content_voice .swiper-button-prev{
+        width: 12px;
+    }
+    .voice .container .content_voice .swiper-button-next{
+        width: 12px;
     }
 }

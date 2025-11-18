@@ -31,6 +31,7 @@
                 gap: 32px;
                 align-items: center;
                 border-radius: 16px;
+
                 &:hover {
                     box-shadow: 0 0 10px $orange_color;
                 }
@@ -51,7 +52,6 @@
                 .post_single_right {
                     flex: 7;
                     display: flex;
-                    height: 133px;
                     flex-direction: column;
                     gap: 16px;
 
@@ -103,6 +103,28 @@
                         display: -webkit-box;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .blog .container .content_blog .post_single {
+        flex-direction: column;
+
+        .post_single_left {
+            width: 300px;
+        }
+
+        .post_single_right {
+            .post_single_right_mid {
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+                display: -webkit-box;
+                overflow: hidden;
+            }
+            .post_single_right_bottom{
+                -webkit-line-clamp: 1;
             }
         }
     }

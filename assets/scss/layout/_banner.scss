@@ -1,4 +1,5 @@
 .banner{
+    
     .container_banner{
         margin: 0 40px;
         height: 490px;
@@ -32,7 +33,7 @@
             left: 55px;
             top: 116px;
         }
-        img{
+        .img{
             z-index: 2;
             top: 170px;
             left: 12px;
@@ -49,8 +50,16 @@
             top: 46px;
             width: 688px;
             height: 532px;
-            left: 650px;
+            left: 48%;
             z-index: 1;
+        }
+    }
+}
+@media (max-width: 900px){
+    .container_banner{
+        .img{
+            width: 600px;
+            
         }
     }
 }

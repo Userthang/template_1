@@ -23,6 +23,9 @@
             .content{
                 display: flex;
                 gap: 24px;
+                flex-wrap: wrap;
+                justify-content: center;
+                
                 .reason_item{
                     display: flex;
                     background-color: white;
@@ -33,6 +36,8 @@
                     position: relative;
                     align-items: center;
                     flex: 1;
+                    max-width: 360px;
+                    
                     &:hover{
                         box-shadow: 0 0 10px $orange_color;
                     }
@@ -49,7 +54,8 @@
                         font-size: 20px;
                         font-family: $font_noto_sans_jp;
                         line-height: 140%;
-                        letter-spacing: 3%;
+                        width: 280px;
+                        text-align: center;
                         strong{
                             color: $orange_color;
                         }

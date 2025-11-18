@@ -21,7 +21,6 @@
     border-radius: 16px 0 0 16px;
     gap: 8px;
     line-height: 150%;
-    letter-spacing: 3%;
     font-weight: 600;
     font-family: $font_oswald;
 
@@ -33,7 +32,7 @@
     span {
         color: white;
         font-size: 14px;
-
+        line-height: 100%;
     }
 
     a {
@@ -59,6 +58,7 @@
         font-family: $font_noto_sans_jp;
         line-height: 130%;
         letter-spacing: 3%;
+        text-align: center;
     }
 
     .title_element1 {
@@ -99,6 +99,25 @@
             background-color: $orange_color;
         }
     }
+    @media (max-width: 768px){
+        padding: 0 0 12px;
+        h2{
+            font-size: 30px;
+        }
+        .title_element1{
+            font-size: 14px;
+        }
+        .title_element3{
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 455px){
+        .title_element1{
+            .title_element1_span{
+                width: 30px;
+            }
+        }
+    }
 }
 
 @mixin button_block() {
@@ -137,6 +156,18 @@
             filter: brightness(0) invert(1);
         }
     }
+    @media (max-width: 768px){
+        span{
+            font-size: 15px;
+        }
+        .button_block_img_empty{
+            display: none;
+        }
+        width: auto;
+    }
+    @media (max-width: 360px){
+        padding: 24px;
+    }
 }
 
 @mixin title_dashed_line {
@@ -154,9 +185,15 @@
         font-size: 32px;
         font-weight: 700;
         font-family: $font_noto_sans_jp;
+        text-align: center;
     }
 
     strong {
         color: $orange_color;
+    }
+    @media (max-width: 768px){
+        span{
+            font-size: 24px;
+        }
     }
 }

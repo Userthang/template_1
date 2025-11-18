@@ -5,16 +5,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container {
+            height: 400px;
+
+            max-width: 1440px;
+            margin: 0 auto;
+
+        }
+
+        .button_bubble {
+
+            position: fixed;
+            right: 1%;
+            top: 40%;
+            z-index: 100;
+            background-color: black;
+
+            .button_bubble_content {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                #button_bubble1 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    background-color: red;
+                    padding: 16px 12px 20px;
+                    border-radius: 16px 0 0 16px;
+                    gap: 8px;
+                    line-height: 150%;
+                    font-weight: 600;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    span {
+                        color: white;
+                        font-size: 14px;
+
+                    }
+
+                    a {
+                        font-size: 11px;
+                        background-color: #FFE344;
+                        border-radius: 8px;
+                        padding: 0 8px;
+                        line-height: 150%;
+                    }
+                }
+
+                #button_bubble2 {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 16px 12px 20px;
+                    border-radius: 16px 0 0 16px;
+                    background-color: orange;
+                    gap: 8px;
+                    line-height: 150%;
+                    font-weight: 600;
+
+                    img {
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    span {
+                        color: white;
+                        font-size: 14px;
+
+                    }
+
+                    a {
+                        font-size: 11px;
+                        background-color: #FFE344;
+                        border-radius: 8px;
+                        padding: 0 8px;
+                        line-height: 150%;
+                    }
+                }
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <!-- nội dung header -->
-            <div style="letter-spacing: 3px;">
-                hello
-            </div>
+
         </div>
+        <section class="button_bubble">
+            <div class="button_bubble_content">
+                <button id="button_bubble1">
+                    <img src="assets/images/top/mingcute_mail-fill.png" alt="">
+                    <span>お問い合わせ</span>
+                    <a>無料</a>
+                </button>
+                <button id="button_bubble2">
+                    <img src="assets/images/top/vaadin_office.png" alt="">
+                    <span>来店予約</span>
+                    <a>無料</a>
+                </button>
+            </div>
+        </section>
     </header>
     <main>
         <section class="banner">
@@ -38,59 +135,6 @@
             <!-- nội dung footer -->
         </div>
     </footer>
-    <div class="post_content">
-        <div class="post_single">
-            <div class="post_single_left">
-                <img src="" alt="">
-            </div>
-            <div class="post_single_right">
-                <div class="post_single_right_top">
-                    <span>2024.00.00</span>
-                    <button>カテゴリ名</button>
-                </div>
-                <div class="post_single_right_mid">
-                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                </div>
-                <div class="post_single_right_bottom">
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                </div>
-            </div>
-        </div>
-        <div class="post_single">
-            <div class="post_single_left">
-                <img src="" alt="">
-            </div>
-            <div class="post_single_right">
-                <div class="post_single_right_top">
-                    <span>2024.00.00</span>
-                    <button>カテゴリ名</button>
-                </div>
-                <div class="post_single_right_mid">
-                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                </div>
-                <div class="post_single_right_bottom">
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                </div>
-            </div>
-        </div>
-        <div class="post_single">
-            <div class="post_single_left">
-                <img src="" alt="">
-            </div>
-            <div class="post_single_right">
-                <div class="post_single_right_top">
-                    <span>2024.00.00</span>
-                    <button>カテゴリ名</button>
-                </div>
-                <div class="post_single_right_mid">
-                    タイトルが入ります。タイトルが入ります。タイトルが入ります。タイトルが入ります。
-                </div>
-                <div class="post_single_right_bottom">
-                    本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。本文が入ります。
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

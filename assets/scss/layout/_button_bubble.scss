@@ -1,9 +1,10 @@
 .button_bubble{
+    
     position: fixed;
     right: 1%;
     top: 40%;
     z-index: 100;
-    width: fit-content;
+
     .button_bubble_content{
         display: flex;
         flex-direction: column;

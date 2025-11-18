@@ -1,6 +1,6 @@
 .slide {
+    
     margin: 40px 0;
-
     .container_swiper {
         margin: 0 80px;
         position: relative;
@@ -31,5 +31,24 @@
             width: 14px;
         }
 
+    }
+}
+@media (max-width: 1100px){
+    .slide{
+        .container_swiper{
+        margin: 0 40px;
+        .swiper{
+            margin: 0 40px;
+        }
+    }
+    }
+    
+}
+@media (max-width: 500px){
+    .slide .container_swiper .swiper-button-prev{
+        width: 12px;
+    }
+    .slide .container_swiper .swiper-button-next{
+        width: 12px;
     }
 }

@@ -32,7 +32,7 @@
 
             <div class="header_top">
                 <img src="./assets/images/top/logo.png" alt="" id="header_img_logo">
-                <div class="header_info">
+                <div class="header_info" id="header_info">
                     <div class="header_phone">
                         <img src="assets/images/top/phone_color_orange.png" alt="">
                         <div>043-400-3370</div>
@@ -42,25 +42,51 @@
                         <br>10:00~18:00（水曜日を除く）
                     </div>
                 </div>
+                <div id="toggle_menu">
+                    <img src="assets/images/top/icn_phone_toggle.png" alt="" onclick="toggle_menu_info()">
+                    <button class="open_menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
             </div>
             <nav class="header_nav">
                 <ul>
-                    <li><a href="#">選ばれる理由</a></li>
-                    <li><a href="#">初めての方へ</a></li>
-                    <li><a href="#">解体工事の流れ</a></li>
-                    <li><a href="#">解体工事メニュー</a></li>
-                    <li><a href="#">会社概要</a></li>
-                    <li><a href="#">スタッフ紹介</a></li>
-                    <li><a href="#">施工事例</a></li>
-                    <li><a href="#">現場ブログ</a></li>
-                    <li><a href="#">お客様の声</a></li>
-                    <li><a href="#">補助金情報</a></li>
+                    <li class="nav_li_left"><a href="#">選ばれる理由</a></li>
+                    <li class="nav_li_right"><a href="#">初めての方へ</a></li>
+                    <li class="nav_li_left"><a href="#">解体工事の流れ</a></li>
+                    <li class="nav_li_right"><a href="#">解体工事メニュー</a></li>
+                    <li class="nav_li_left"><a href="#">会社概要</a></li>
+                    <li class="nav_li_right"><a href="#">スタッフ紹介</a></li>
+                    <li class="nav_li_left"><a href="#">施工事例</a></li>
+                    <li class="nav_li_right"><a href="#">現場ブログ</a></li>
+                    <li class="nav_li_left"><a href="#">お客様の声</a></li>
+                    <li class="nav_li_right"><a href="#">補助金情報</a></li>
                 </ul>
+                <div class="navigation_button">
+                    <button id="navigation_button1">
+                        <img src="assets/images/top/chevron.svg" alt="" class="img_none">
+                        <div>
+                            <img src="assets/images/top/mingcute_mail-fill.png" alt="">
+                            <span>お問い合わせ</span>
+                        </div>
+                        <img src="assets/images/top/chevron.svg" alt="">
+                    </button>
+                    <button id="navigation_button2">
+                        <img src="assets/images/top/chevron.svg" alt="" class="img_none">
+                        <div>
+                            <img src="assets/images/top/vaadin_office_footer.png" alt="">
+                            <span>お問い合わせ</span>
+                        </div>
+                        <img src="assets/images/top/chevron.svg" alt="">
+                    </button>
+                </div>
             </nav>
 
         </div>
     </header>
-
+    <div class="overlay"></div>
     <main class="main">
         <section class="banner">
             <div class="container">
@@ -70,7 +96,7 @@
                         千葉・佐賀・筑後 地域密着！
                     </div>
                     <strong>お客様の未来を考えている解体ブランド</strong>
-                    <img src="assets/images/top/logo_banner.png" alt="">
+                    <img class="img" src="assets/images/top/logo_banner.png" alt="">
                     <div class="banner_img">
                         <img src="assets/images/top/img_banner1.png" alt="">
                         <img src="assets/images/top/img_banner2.png" alt="">
@@ -142,7 +168,13 @@
                         },
 
                         breakpoints: {
-                            768: {
+                            0: {
+                                slidesPerView: 1,
+                            },
+                            500: {
+                                slidesPerView: 2,
+                            },
+                            1050: {
                                 slidesPerView: 3,
                             },
 
@@ -176,10 +208,10 @@
                         <div class="content">
                             <div class="reason_item">
                                 <span class="reason_cap">01</span>
-                                <span class="reason_title">
+                                <div class="reason_title">
                                     <strong>土地活用</strong>
                                     までフルサポート
-                                </span>
+                                </div>
                                 <div class="reason_item_content">
                                     <div class="reason_item_img">
                                         <img src="assets/images/top/reason_img1.png" alt="">
@@ -191,10 +223,10 @@
                             </div>
                             <div class="reason_item">
                                 <span class="reason_cap">02</span>
-                                <span class="reason_title">
+                                <div class="reason_title">
                                     <strong>明瞭</strong>
                                     な料金設定
-                                </span>
+                                </div>
                                 <div class="reason_item_content">
                                     <div class="reason_item_img">
                                         <img src="assets/images/top/reason_img2.png" alt="">
@@ -206,10 +238,10 @@
                             </div>
                             <div class="reason_item">
                                 <span class="reason_cap">03</span>
-                                <span class="reason_title">
+                                <div class="reason_title">
                                     <strong>＋α</strong>
                                     のサービス力
-                                </span>
+                                </div>
                                 <div class="reason_item_content">
                                     <div class="reason_item_img">
                                         <img src="assets/images/top/reason_img3.png" alt="">
@@ -780,6 +812,7 @@
                             <span class="title_element3_span"></span>
                         </h2>
                     </div>
+                    <div class="replace_content_voice"></div>
                     <div class="content_voice">
                         <div class="swiper" id="swiper_voice">
                             <!-- Additional required wrapper -->
@@ -840,20 +873,20 @@
                             },
 
                             breakpoints: {
-                                320: {
+                                0: {
                                     slidesPerView: 1.5,
                                     centeredSlides: true,
-                                    spaceBetween: 30,
+                                    spaceBetween: 35,
                                 },
-                                450: {
+                                501: {
                                     slidesPerView: 2,
                                     centeredSlides: false,
                                     spaceBetween: 16,
                                 },
-                                601: {
+                                850: {
                                     slidesPerView: 3,
                                 },
-                                1024: {
+                                1150: {
                                     slidesPerView: 4,
                                 },
                             },
@@ -886,6 +919,7 @@
                             <span class="title_element3_span"></span>
                         </h2>
                     </div>
+                    <div class="replace_content_staff"></div>
                     <div class="content_staff">
                         <div class="swiper" id="swiper_staff">
                             <!-- Additional required wrapper -->
@@ -946,20 +980,20 @@
                             },
 
                             breakpoints: {
-                                320: {
+                                0: {
                                     slidesPerView: 1.5,
                                     centeredSlides: true,
-                                    spaceBetween: 30,
+                                    spaceBetween: 35,
                                 },
-                                450: {
+                                501: {
                                     slidesPerView: 2,
                                     centeredSlides: false,
                                     spaceBetween: 16,
                                 },
-                                601: {
+                                850: {
                                     slidesPerView: 3,
                                 },
-                                1024: {
+                                1150: {
                                     slidesPerView: 4,
                                 },
                             },

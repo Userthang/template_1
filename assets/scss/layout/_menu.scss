@@ -41,8 +41,9 @@
 
                 .content1_top_content {
                     display: flex;
-                    gap: 20px;  
-                    justify-content: space-between;
+                    gap: 30px;  
+                    justify-content: center;
+                    flex-wrap: wrap;
 
                     .content1_top_item {
                         position: relative;
@@ -272,6 +273,7 @@
                 display: grid;
                 grid-template-columns: repeat(4, 1fr);
                 gap: 24px;
+                
                 .item{
                     background-color: white;
                     border-radius: 16px;
@@ -317,6 +319,7 @@
                                 flex-direction: column;
                                 font-family: $font_noto_sans_jp;
                                 line-height: 140%;
+                                white-space: nowrap;
                                 span{
                                     font-size: 12px;
                                     font-weight: 500;
@@ -359,6 +362,43 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    .menu{
+        .content_menu{
+            .content{
+                .content2{
+                    grid-template-columns: repeat(3,1fr);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .menu{
+        .content_menu{
+            .content{
+                .content2{
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 12px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 400px) {
+    .menu{
+        .content_menu{
+            .content{
+                .content2{
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 6px;
                 }
             }
         }

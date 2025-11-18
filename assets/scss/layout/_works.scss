@@ -102,6 +102,7 @@
                 text-decoration: none;
                 align-items: center;
                 font-family: $font_noto_sans_jp;
+                flex-shrink: 0;
 
                 span {
                     white-space: nowrap;
@@ -165,5 +166,29 @@
                 }
             }
         }
+    }
+}
+@media (max-width: 1150px){
+    .works{
+        .content_works{
+            .grid{
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+    }
+}
+
+@media (max-width: 850px){
+    .works{
+        .content_works{
+            .grid{
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+@media (max-width: 410px){
+    .works .content_works .grid .grid_item .info_product .product_line1{
+        text-align: left;
     }
 }

@@ -15,7 +15,9 @@
         .button_block {
             @include button_block;
         }
-
+        .replace_content_staff{
+            display: none;
+        }
         .content_staff {
             position: relative;
             max-width: 1280px;
@@ -81,5 +83,14 @@
                 right: 10px;
             }
         }
+    }
+}
+
+@media (max-width: 500px){
+    .staff .container .content_staff .swiper-button-next{
+        width: 12px;
+    }
+    .staff .container .content_staff .swiper-button-prev{
+        width: 12px;
     }
 }

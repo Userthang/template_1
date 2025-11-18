@@ -20,6 +20,7 @@
             max-width: 1120px;
             display: flex;
             gap: 40px;
+            
             .img_showroom_message{
                 flex: 4.5;
                 background-color: $light_grey_color;
@@ -44,6 +45,16 @@
                     text-align: right;
                 }
             }
+        }
+    }
+}
+@media (max-width: 1150px){
+    
+    .content_showroom_message{
+        flex-direction: column;
+        align-items: center;
+        .img_showroom_message{
+            width: 480px;
         }
     }
 }
