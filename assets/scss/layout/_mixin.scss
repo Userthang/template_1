@@ -160,10 +160,9 @@
         span{
             font-size: 15px;
         }
-        .button_block_img_empty{
-            display: none;
-        }
         width: auto;
+        gap: 4px;
+        padding: 16px 20px 16px 0;
     }
     @media (max-width: 360px){
         padding: 24px;
